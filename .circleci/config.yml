@@ -6,12 +6,12 @@ orbs:
 jobs:
   build:
     docker:
-      - image: '********** CHANGE ME 1 **********'
+      - image: cimg/node
     steps:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: '********** CHANGE ME 2 **********'
+          command: npm install
       - sonarcloud/scan
 
 workflows:
