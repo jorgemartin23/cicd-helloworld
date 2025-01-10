@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  sonarcloud: sonarsource/sonarcloud@2.0.0
+  
 jobs:
   build:
     docker:
@@ -10,9 +13,6 @@ jobs:
           name: Install dependencies and build project
           command: '********** CHANGE ME 2 **********'
       - sonarcloud/scan
-
-orbs:
-  sonarcloud: sonarsource/sonarcloud@2.0.0
 
 workflows:
   main:
