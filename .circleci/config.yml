@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: ********** CHANGE ME 2 **********
+          command: '********** CHANGE ME 2 **********'
       - sonarcloud/scan
 
 orbs:
